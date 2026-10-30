@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": [
+      "jest",
+      "node"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "expo-sqlite": [
+        "tests/stubs/expo-sqlite.ts"
+      ],
+      "expo-crypto": [
+        "tests/stubs/expo-crypto.ts"
+      ]
+    }
+  },
+  "include": [
+    "src/domain",
+    "src/utils",
+    "src/db",
+    "src/audio/soundService.ts",
+    "src/feedback/runWithFeedback.ts",
+    "src/notifications/sync.ts",
+    "src/notifications/service.ts",
+    "src/security/kdf.ts",
+    "src/exports/builders.ts",
+    "tests"
+  ]
+}
